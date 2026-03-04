@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Healthy LifeStyle - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+
+    <style>
+        label {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        span {
+            color: red;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .contact-box {
+            border: 3px solid #77b300;
+            border-radius: 20px;
+            padding: 30px;
+            background: #fff;
+        }
+
+        footer h4 {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+  <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+                    <img src="img/logo.png" class="img-fluid mx-auto" height="70" width="170">
+                </div>
+
+                <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+                    <form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+                        <div class="input-group">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search....">
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Home.html"
+                            style="width: 110px; text-align: center;">HOME</a></li>
+                    <<li class="nav-item"><a class="nav-link" href="WeightLoss.html"
+                            style="width: 160px; text-align: center;">WEIGHT LOSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="WeightGain.html"
+                                style="width: 160px; text-align: center;">WEIGHT GAIN</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Workout.html"
+                                style="width: 130px; text-align: center;">WORKOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Yoga.html"
+                                style="width: 110px; text-align: center;">YOGA</a></li>
+                        <li class="nav-item active" style="border-bottom: 3px solid #77b300; font-size: 17px;">
+                            <a class="nav-link" href="Contact.html"
+                                style="width: 110px; text-align: center;">CONTACT</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- ================= CONTACT FORM ================= -->
+    <div class="container">
+        <div class="contact-box">
+
+            <h3 class="text-center mb-4">
+                Become a Member and get your customised Diet Plan.<br>
+                Please Fill out the below details.
+            </h3>
+
+            <form name="form1" onsubmit="return Reg()">
+
+                <div class="row">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" id="Fname" class="form-control">
+                            <span id="Fnamemsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Contact No</label>
+                            <input type="text" id="Cnumber" class="form-control">
+                            <span id="mobilemsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" id="age" class="form-control">
+                            <span id="agemsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Weight</label>
+                            <input type="number" id="Weight" class="form-control">
+                            <span id="Weightmsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label><br>
+                            <input type="radio" name="gender" value="Male"> Male
+                            <input type="radio" name="gender" value="Female" class="ml-3"> Female
+                            <br><span id="gendermsg"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" id="Lname" class="form-control">
+                            <span id="Lnamemsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" class="form-control">
+                            <span id="emailmsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Height (Feet)</label>
+                            <input type="number" id="height" class="form-control">
+                            <span id="heightmsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Body Type</label>
+                            <select id="bodytype" class="form-control">
+                                <option value="0">-Select Body Type-</option>
+                                <option value="1">Underweight</option>
+                                <option value="2">Normal</option>
+                                <option value="3">Overweight</option>
+                            </select>
+                            <span id="bodytypemsg"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Looking For</label><br>
+                            <input type="radio" name="loss" value="Loss"> Weight Loss
+                            <input type="radio" name="loss" value="Gain" class="ml-3"> Weight Gain
+                            <br><span id="LossGainmsg"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <input type="submit" class="btn btn-success px-4" value="SUBMIT">
+                    <input type="reset" class="btn btn-danger px-4 ml-3" value="RESET">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark">
+        <h4>@ 2021 Healthy Lifestyle. All Copyrights Reserved.</h4>
+    </footer>
+
+    <!-- ================= CONTACT.JS (INLINE) ================= -->
+    <script>
+        function Reg() {
+
+            let fname = Fname.value;
+            if (fname == "" || fname.length < 3) {
+                Fnamemsg.innerHTML = "Enter valid First Name";
+                return false;
+            } else Fnamemsg.innerHTML = "";
+
+            if (Lname.value == "") {
+                Lnamemsg.innerHTML = "Enter Last Name";
+                return false;
+            } else Lnamemsg.innerHTML = "";
+
+            let cnum = Cnumber.value;
+            if (cnum.length != 10 || isNaN(cnum)) {
+                mobilemsg.innerHTML = "Enter valid 10 digit number";
+                return false;
+            } else mobilemsg.innerHTML = "";
+
+            if (email.value == "") {
+                emailmsg.innerHTML = "Enter Email";
+                return false;
+            } else emailmsg.innerHTML = "";
+
+            if (age.value < 10 || age.value > 100) {
+                agemsg.innerHTML = "Age 10-100 only";
+                return false;
+            } else agemsg.innerHTML = "";
+
+            if (height.value < 3 || height.value > 10) {
+                heightmsg.innerHTML = "Height 3-10 feet";
+                return false;
+            } else heightmsg.innerHTML = "";
+
+            if (Weight.value < 20 || Weight.value > 200) {
+                Weightmsg.innerHTML = "Weight 20-200";
+                return false;
+            } else Weightmsg.innerHTML = "";
+
+            if (bodytype.value == "0") {
+                bodytypemsg.innerHTML = "Select Body Type";
+                return false;
+            } else bodytypemsg.innerHTML = "";
+
+            if (!form1.gender.value) {
+                gendermsg.innerHTML = "Select Gender";
+                return false;
+            } else gendermsg.innerHTML = "";
+
+            if (!form1.loss.value) {
+                LossGainmsg.innerHTML = "Select option";
+                return false;
+            } else LossGainmsg.innerHTML = "";
+
+            alert("Form Submitted Successfully!");
+            return true;
+        }
+    </script>
+
+    <script>
+        function searchPage() {
+            var input = document.getElementById("searchInput").value.toLowerCase().trim();
+
+            if (input === "home") {
+                window.location.href = "Home.html";
+            }
+            else if (input === "weightloss" || input === "weight loss") {
+                window.location.href = "WeightLoss.html";
+            }
+            else if (input === "weightgain" || input === "weight gain") {
+                window.location.href = "WeightGain.html";
+            }
+            else if (input === "workout") {
+                window.location.href = "Workout.html";
+            }
+            else if (input === "yoga") {
+                window.location.href = "Yoga.html";
+            }
+            else if (input === "contact") {
+                window.location.href = "Contact.html";
+            }
+            else {
+                alert("Page not found!");
+            }
+
+            return false;
+        }
+    </script>
+
+
+</body>
+
+</html>

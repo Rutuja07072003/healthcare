@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Healthy LifeStyle</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="bootstrap.css">
+	<script src="bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/logo.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link" href="Home.html"
+							style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="WeightLoss.html"
+							style="width: 160px; text-align: center;">WEIGHT LOSS</a></li>
+					<li class="nav-item"><a class="nav-link" href="WeightGain.html"
+							style="width: 160px; text-align: center;">WEIGHT GAIN</a></li>
+					<li class="nav-item"><a class="nav-link" href="Workout.html"
+							style="width: 130px; text-align: center;">WORKOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="Yoga.html"
+							style="width: 110px; text-align: center;">YOGA</a></li>
+					<li class="nav-item"><a class="nav-link" href="Contact.html"
+							style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br>
+
+	<section>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<h1 style="text-align: center;">- Simple Daily Habits for a Healthier Life -</h1><br>
+				</div>
+
+				<div class="col-12">
+					<p style="font-size: 20px; line-height: 28px; text-align: justify;">
+						<b>-</b> True health is not just about physical strength. It also includes mental clarity and
+						emotional balance. A healthy lifestyle helps you prevent diseases, improve energy levels, and
+						enhance your overall quality of life. When you take care of your body and mind, you build
+						confidence and feel better about yourself every day.
+						<br><br>
+						<b>-</b> Adopting small but consistent healthy habits can create long-term positive results.
+						Below are some powerful lifestyle habits you can follow:
+					</p><br>
+
+					<h4>1. Stay Physically Active</h4>
+					<p style="font-size: 18px; line-height: 28px; text-align: justify;">
+						- You don’t need intense gym workouts to stay fit. Simple activities like brisk walking,
+						cycling, stretching, yoga, or home workouts are enough to keep your body active. Regular
+						movement improves blood circulation and boosts immunity.
+						<br><br>
+						- Try to exercise at least 30 minutes a day, 4–5 days a week. Consistency matters more than
+						intensity. Choose activities that you enjoy so that you can maintain them long term.
+					</p><br>
+
+					<h4>2. Eat a Balanced and Nutritious Diet</h4>
+					<p style="font-size: 18px; line-height: 28px; text-align: justify;">
+						- A balanced diet provides essential nutrients your body needs to function properly. Include
+						fresh fruits, vegetables, whole grains, lean proteins, and healthy fats in your meals.
+						<br><br>
+						- Limit processed foods, excess sugar, and high-sodium snacks. Drink plenty of water throughout
+						the day. Remember, proper nutrition fuels your body and supports overall wellness.
+					</p><br>
+
+					<h4>3. Manage Stress Effectively</h4>
+					<p style="font-size: 18px; line-height: 28px; text-align: justify;">
+						- Life can be stressful, but managing stress is essential for maintaining good health. Practice
+						meditation, deep breathing exercises, or spend time doing activities you love.
+						<br><br>
+						- Taking short breaks, listening to music, or spending time in nature can significantly improve
+						your mental well-being.
+					</p><br>
+
+					<h4>4. Build Positive Relationships</h4>
+					<p style="font-size: 18px; line-height: 28px; text-align: justify;">
+						- Surround yourself with supportive and positive people. Healthy relationships contribute to
+						emotional stability and happiness.
+						<br><br>
+						- Focus on gratitude and maintain an optimistic mindset. Even in difficult times, try to find
+						lessons and growth opportunities. A positive outlook can make a powerful difference in your
+						life.
+						<br><br>
+						- Living a healthy lifestyle does not require drastic changes. Small daily improvements can lead
+						to lifelong health and happiness.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section><br>
+
+	<footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 text-center text-white">
+				<h4>@ 2021 Healthy Lifestyle . All Copy Rights Reserved.</h4>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		function searchPage() {
+			var input = document.getElementById("searchInput").value.toLowerCase().trim();
+
+			if (input === "home") {
+				window.location.href = "Home.html";
+			}
+			else if (input === "weightloss" || input === "weight loss") {
+				window.location.href = "WeightLoss.html";
+			}
+			else if (input === "weightgain" || input === "weight gain") {
+				window.location.href = "WeightGain.html";
+			}
+			else if (input === "workout") {
+				window.location.href = "Workout.html";
+			}
+			else if (input === "yoga") {
+				window.location.href = "Yoga.html";
+			}
+			else if (input === "contact") {
+				window.location.href = "Contact.html";
+			}
+			else if (input === "goodhabits" || "goodhabit" || "good habits" || "good habit") {
+				window.location.href = "GoodHabit.html";
+			}
+			else {
+				alert("Page not found!");
+			}
+
+			return false;
+		}
+	</script>
+</body>
+
+</html>
